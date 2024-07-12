@@ -1,8 +1,8 @@
 'use client'
 
-import FormInput from "./form-input";
+import { FormInput } from "@/components/form/form-input";
+import { FormSubmit } from "@/components/form/form-submit";
 import { createBoard } from "@/actions/create-board";
-import FormButton from "./form-button";
 import { useAction } from "@/hooks/use-action";
 
 const Form = () => {
@@ -27,9 +27,15 @@ const Form = () => {
     <>
       <form action={onSubmit}>
         <div className="flex flex-col space-y-2">
-          <FormInput errors={fieldErrors} />
+          <FormInput
+            label="Board Title"
+            id="title"
+            errors={fieldErrors}
+          />
         </div>
-        <FormButton />
+        <FormSubmit>
+          Save
+        </FormSubmit>
       </form>
     </>
   )
