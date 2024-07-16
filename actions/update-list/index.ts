@@ -1,4 +1,4 @@
-'use client';
+'use server';
 
 import { auth } from "@clerk/nextjs/server";
 import { InputType, ReturnType } from "./types";
