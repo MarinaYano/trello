@@ -1,6 +1,7 @@
 'use client';
 
 import { createCard } from "@/actions/create-list copy";
+import { FormSubmit } from "@/components/form/form-submit";
 import { FormTextarea } from "@/components/form/form-textarea";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
@@ -88,9 +89,9 @@ export const CardFrom = forwardRef<HTMLTextAreaElement, CardFromProps>(({
           value={listId}
         />
         <div className="flex items-center gap-x-1">
-          {/* <FormSubmit>
+          <FormSubmit>
             Add Card
-          </FormSubmit> */}
+          </FormSubmit>
           <Button
             onClick={disableEditing}
             className=""
@@ -101,7 +102,6 @@ export const CardFrom = forwardRef<HTMLTextAreaElement, CardFromProps>(({
       </form>
     )
   }
-  // 8:13:50
 
   return (
     <div className="pt-2 px-2">
