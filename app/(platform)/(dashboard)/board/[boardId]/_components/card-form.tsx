@@ -1,6 +1,6 @@
 'use client';
 
-import { createCard } from "@/actions/create-list copy";
+import { createCard } from "@/actions/create-card";
 import { FormSubmit } from "@/components/form/form-submit";
 import { FormTextarea } from "@/components/form/form-textarea";
 import { Button } from "@/components/ui/button";
